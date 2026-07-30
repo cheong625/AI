@@ -1,0 +1,201 @@
+html
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保誠信守明天計劃 - 專業理財演示</title>
+    <style>
+        body { font-family: "Microsoft JhengHei", Arial, sans-serif; background-color: #f8f9fa; color: #333; margin: 0; padding: 20px; }
+        .dashboard { max-width: 900px; margin: 0 auto; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; border-top: 10px solid #ED1B24; }
+        .header { background: #002F6C; color: white; padding: 30px; text-align: center; }
+        .header h1 { margin: 0; font-size: 28px; }
+        .section { padding: 30px; border-bottom: 1px solid #eee; }
+        .section-title { color: #ED1B24; font-size: 20px; font-weight: bold; margin-bottom: 20px; border-left: 5px solid #ED1B24; padding-left: 15px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: #fff; border: 1px solid #e1e4e8; padding: 20px; border-radius: 12px; }
+        .label { font-size: 14px; color: #666; margin-bottom: 5px; }
+        
+        /* 港元放大顯示 */
+        .value-hkd { font-size: 26px; font-weight: bold; color: #002F6C; }
+        /* 美元次要顯示 */
+        .value-usd { font-size: 15px; color: #888; margin-top: 5px; }
+        .highlight-red { color: #ED1B24 !important; }
+
+        .interactive-box { background: #f0f4f8; border-radius: 15px; padding: 25px; margin-top: 20px; }
+        .tabs { display: flex; gap: 10px; margin-bottom: 20px; }
+        .tab { flex: 1; padding: 12px; text-align: center; cursor: pointer; background: #ddd; border-radius: 8px; font-weight: bold; }
+        .tab.active { background: #ED1B24; color: white; }
+        input[type=range] { width: 100%; margin: 20px 0; accent-color: #ED1B24; }
+        
+        .milestone-table { width: 100%; border-collapse: collapse; }
+        .milestone-table th, .milestone-table td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; }
+        .milestone-table th { background: #f8f9fa; color: #002F6C; }
+
+        .footer-note { font-size: 12px; color: #999; padding: 20px; text-align: center; }
+    </style>
+</head>
+<body>
+
+<div class="dashboard">
+    <div class="header">
+        <h1>保誠信守明天多元貨幣計劃 (TRST)</h1>
+        <p>為香港家庭打造的財富傳承方案</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">一、計劃基本資訊</div>
+        <div class="grid">
+            <div class="card">
+                <div class="label">每年供款</div>
+                <div class="value-hkd">HKD 156,000</div>
+                <div class="value-usd">(USD 20,000)</div>
+            </div>
+            <div class="card">
+                <div class="label">供款年期</div>
+                <div class="value-hkd">5 年</div>
+            </div>
+            <div class="card">
+                <div class="label">總基本保費</div>
+                <div class="value-hkd">HKD 780,000</div>
+                <div class="value-usd">(USD 100,000)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" style="background: #fff9f9;">
+        <div class="section-title">二、預繳保費優惠 (3.8% 利率)</div>
+        <div class="grid">
+            <div class="card" style="border-top: 4px solid #ED1B24;">
+                <div class="label">一筆過預繳總省</div>
+                <div class="value-hkd highlight-red">HKD 55,057</div>
+                <div class="value-usd">(USD 7,058.60)</div>
+            </div>
+            <div class="card">
+                <div class="label">一筆過支付總額</div>
+                <div class="value-hkd">HKD 725,440</div>
+                <div class="value-usd">(USD 93,005.10)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">三、財富增長里程碑 (不提取情況)</div>
+        <table class="milestone-table">
+            <thead>
+                <tr>
+                    <th>保單年度</th>
+                    <th>年歲</th>
+                    <th>港幣總價值 (HKD)</th>
+                    <th>美元總價值 (USD)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>第 8 年</td><td>70 歲</td><td>$833,617</td><td>$106,874</td></tr>
+                <tr><td>第 10 年</td><td>72 歲</td><td>$997,144</td><td>$127,839</td></tr>
+                <tr><td>第 15 年</td><td>77 歲</td><td>$1,473,693</td><td>$188,935</td></tr>
+                <tr><td>第 20 年</td><td>82 歲</td><td>$2,161,645</td><td>$277,134</td></tr>
+                <tr><td>第 25 年</td><td>87 歲</td><td>$3,225,050</td><td>$413,468</td></tr>
+                <tr><td>第 39 年</td><td>101 歲</td><td><b class="highlight-red">$8,045,606</b></td><td>$1,031,488</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">四、靈活提取方案動態對比</div>
+        <div class="tabs">
+            <div id="tab1" class="tab active" onclick="switchOption(1)">方案一 (提取 6.5%)</div>
+            <div id="tab2" class="tab" onclick="switchOption(2)">方案二 (提取 10%)</div>
+        </div>
+
+        <div class="interactive-box">
+            <div id="option-desc" style="font-weight: bold; color: #002F6C; margin-bottom: 15px;">
+                策略：從第 6 年起，每年提取 HKD 50,700 (佔總保費之 6.5%)
+            </div>
+            
+            <div style="text-align: center; font-size: 18px; font-weight: bold;">
+                保單年度：第 <span id="year-val">6</span> 年 (約 <span id="age-val">68</span> 歲)
+            </div>
+            <input type="range" id="year-slider" min="6" max="39" value="6" oninput="updateData()">
+
+            <div class="grid" style="margin-top: 20px;">
+                <div class="card">
+                    <div class="label">該年提取金額</div>
+                    <div class="value-hkd" id="ann-hkd">HKD 50,700</div>
+                    <div class="value-usd" id="ann-usd">(USD 6,500)</div>
+                </div>
+                <div class="card">
+                    <div class="label">累積提取總額</div>
+                    <div class="value-hkd highlight-red" id="cum-hkd">HKD 50,700</div>
+                    <div class="value-usd highlight-red" id="cum-usd" style="font-weight:bold;">(USD 6,500)</div>
+                </div>
+                <div class="card" style="grid-column: span 2; background: #e8f0fe; border: 2px solid #002F6C;">
+                    <div class="label">提取後剩餘現金價值 (可傳承資產)</div>
+                    <div class="value-hkd" id="sv-hkd" style="font-size: 32px;">HKD 537,264</div>
+                    <div class="value-usd" id="sv-usd" style="font-size: 18px; font-weight: bold;">(USD 68,880)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-note">
+        註：以上數據摘自建議書（TRST 版本）。所有港幣金額均以 1:7.8 匯率換算。非保證金額或有調整。,,,
+    </div>
+</div>
+
+<script>
+    let currentOption = 1;
+    // 方案一 (6.5%) 數據
+    const data1 = {
+        6: 68880, 8: 85771, 10: 90353, 15: 99323, 20: 112121, 25: 134781, 30: 158491, 35: 184515, 39: 212274
+    };
+    // 方案二 (10%) 數據
+    const data2 = {
+        10: 117839, 15: 120164, 20: 122735, 25: 130293, 30: 131693, 35: 126892, 39: 121464
+    };
+
+    function switchOption(opt) {
+        currentOption = opt;
+        document.getElementById('tab1').className = opt === 1 ? 'tab active' : 'tab';
+        document.getElementById('tab2').className = opt === 2 ? 'tab active' : 'tab';
+        const slider = document.getElementById('year-slider');
+        if(opt === 1) {
+            slider.min = 6; slider.value = 6;
+            document.getElementById('option-desc').innerText = "策略：從第 6 年起，每年提取 HKD 50,700 (佔總保費之 6.5%)";
+        } else {
+            slider.min = 10; slider.value = 10;
+            document.getElementById('option-desc').innerText = "策略：從第 10 年起，每年提取 HKD 78,000 (佔總保費之 10%)";
+        }
+        updateData();
+    }
+
+    function updateData() {
+        const year = parseInt(document.getElementById('year-slider').value);
+        const dataSet = currentOption === 1 ? data1 : data2;
+        const annUSD = currentOption === 1 ? 6500 : 10000;
+        
+        let keys = Object.keys(dataSet).map(Number);
+        let closest = keys.reduce((p, c) => Math.abs(c - year) < Math.abs(p - year) ? c : p);
+        let sv = dataSet[closest];
+
+        document.getElementById('year-val').innerText = year;
+        document.getElementById('age-val').innerText = 62 + year;
+        
+        // 該年提取
+        document.getElementById('ann-hkd').innerText = `HKD ${(annUSD*7.8).toLocaleString()}`;
+        document.getElementById('ann-usd').innerText = `(USD ${annUSD.toLocaleString()})`;
+        
+        // 累積提取計算
+        const cumUSD = currentOption === 1 ? (year - 5) * 6500 : (year - 9) * 10000;
+        document.getElementById('cum-hkd').innerText = `HKD ${(cumUSD*7.8).toLocaleString()}`;
+        document.getElementById('cum-usd').innerText = `(USD ${cumUSD.toLocaleString()})`;
+        
+        // 剩餘價值
+        document.getElementById('sv-hkd').innerText = `HKD ${(sv*7.8).toLocaleString(undefined, {maximumFractionDigits:0})}`;
+        document.getElementById('sv-usd').innerText = `(USD ${sv.toLocaleString()})`;
+    }
+    updateData();
+</script>
+</body>
+</html>
