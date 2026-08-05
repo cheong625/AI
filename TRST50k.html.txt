@@ -1,0 +1,198 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信守明天計劃 (1歲) - 專業理財建議</title>
+    <style>
+        body { font-family: "Microsoft JhengHei", Arial, sans-serif; background-color: #f8f9fa; color: #333; margin: 0; padding: 20px; }
+        .dashboard { max-width: 1050px; margin: 0 auto; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; border-top: 10px solid #ED1B24; }
+        .header { background: #002F6C; color: white; padding: 30px; text-align: center; }
+        .header h1 { margin: 0; font-size: 28px; }
+        .section { padding: 30px; border-bottom: 1px solid #eee; }
+        .section-title { color: #ED1B24; font-size: 20px; font-weight: bold; margin-bottom: 20px; border-left: 5px solid #ED1B24; padding-left: 15px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+        .card { background: #fff; border: 1px solid #e1e4e8; padding: 20px; border-radius: 12px; }
+        .label { font-size: 14px; color: #666; margin-bottom: 5px; }
+        .value-hkd { font-size: 26px; font-weight: bold; color: #002F6C; }
+        .value-usd { font-size: 15px; color: #888; margin-top: 5px; }
+        .highlight-red { color: #ED1B24 !important; font-weight: bold; }
+        .withdraw-hkd { font-size: 32px; font-weight: bold; color: #ED1B24; }
+        .milestone-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 10px; }
+        .milestone-table th, .milestone-table td { padding: 12px 8px; text-align: center; border-bottom: 1px solid #eee; }
+        .milestone-table th { background: #f8f9fa; color: #002F6C; font-weight: bold; }
+        .interactive-box { background: #f0f4f8; border-radius: 15px; padding: 25px; margin-top: 20px; }
+        .tabs { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+        .tab { flex: 1; min-width: 120px; padding: 12px; text-align: center; cursor: pointer; background: #ddd; border-radius: 8px; font-weight: bold; }
+        .tab.active { background: #ED1B24; color: white; }
+        input[type=range] { width: 100%; margin: 20px 0; accent-color: #ED1B24; }
+        .footer-note { font-size: 12px; color: #999; padding: 20px; text-align: center; }
+    </style>
+</head>
+<body>
+
+<div class="dashboard">
+    <div class="header">
+        <h1>保誠信守明天多元貨幣計劃 (TRST)</h1>
+        <p>受保人：1 歲 (翌年歲 1) | 匯率 1:7.85 | 三大提取方案深度對比 </p>
+    </div>
+
+<!-- 一、基本資訊 -->
+    <div class="section">
+        <div class="section-title">一、計劃基本資訊</div>
+        <div class="grid">
+            <div class="card"><div class="label">每年供款</div><div class="value-hkd">HKD 392,500</div><div class="value-usd">(USD 50,000)</div></div>
+            <div class="card"><div class="label">供款年期</div><div class="value-hkd">5 年</div></div>
+            <div class="card"><div class="label">總基本保費</div><div class="value-hkd">HKD 1,962,500</div><div class="value-usd">(USD 250,000)</div></div>
+        </div>
+    </div>
+
+   <!-- 二、預繳優惠 -->
+    <div class="section" style="background: #fff9f9;">
+        <div class="section-title">二、預繳保費優惠 (3.8% 利率)</div>
+        <div class="grid">
+            <div class="card" style="border-top: 4px solid #ED1B24;">
+                <div class="label">一筆過預繳總節省</div>
+                <div class="value-hkd highlight-red">HKD 138,525</div>
+                <div class="value-usd">(USD 17,646.50)</div>
+            </div>
+            <div class="card">
+                <div class="label">一筆過支付總額</div>
+                <div class="value-hkd">HKD 1,824,475</div>
+                <div class="value-usd">(USD 232,417.20)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">三、財富增長里程碑 (不提取情況 - 退保價值總額)</div>
+        <table class="milestone-table">
+            <thead>
+                <tr><th>保單年度</th><th>歲數</th><th>港幣總價值 (HKD)</th><th>美元總價值 (USD)</th><th>保費倍數</th><th>預期 I.R.R.</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>第 10 年</td><td>10 歲</td><td class="highlight-red">$2,508,844</td><td>$319,598</td><td>1.28 倍</td><td>3.64%</td></tr>
+                <tr><td>第 20 年</td><td>20 歲</td><td class="highlight-red">$5,438,755</td><td>$692,835</td><td>2.77 倍</td><td>5.81%</td></tr>
+                <tr><td>第 25 年</td><td>25 歲</td><td class="highlight-red">$8,114,309</td><td>$1,033,670</td><td>4.13 倍</td><td>6.35%</td></tr>
+                <tr><td>第 30 年</td><td>30 歲</td><td class="highlight-red">$11,486,175</td><td>$1,463,207</td><td>5.85 倍</td><td>6.5%</td></tr>
+                <tr><td>第 40 年</td><td>40 歲</td><td class="highlight-red">$21,556,100</td><td>$2,746,000</td><td>11 倍</td><td>6.5%</td></tr>
+                 <tr><td>第 50 年</td><td>50 歲</td><td class="highlight-red">$40,490,300</td><td>$5,158,000</td><td>20.6 倍</td><td>6.5%</td></tr>
+                 <tr><td>第 60 年</td><td>60 歲</td><td class="highlight-red">$75,995,850</td><td>$9,681,000</td><td>38.7 倍</td><td>6.5%</td></tr>
+                 <tr><td>第 80 年</td><td>80 歲</td><td class="highlight-red">$267,794,900</td><td>$34,114,000</td><td>136.5 倍</td><td>6.5%</td></tr>
+                <tr><td>第 100 年</td><td>100 歲</td><td class="highlight-red" style="font-size:18px;">$943,583,180</td><td>$120,201,679</td><td>480.81 倍</td><td>6.50%</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">四、靈活提取方案動態對比</div>
+        <div class="tabs">
+            <div id="tab1" class="tab active" onclick="switchOption(1)">方案一 (提取 6.5%)</div>
+            <div id="tab2" class="tab" onclick="switchOption(2)">方案二 (提取 7.0%)</div>
+            <div id="tab3" class="tab" onclick="switchOption(3)">方案三 (提取 10.0%)</div>
+        </div>
+
+        <div class="interactive-box">
+            <div id="option-desc" style="font-weight: bold; color: #002F6C; margin-bottom: 15px;">策略：每年提取 HKD 127,563 (6.5%)</div>
+            <div style="text-align: center; font-size: 18px; font-weight: bold;">
+                保單年度：第 <span id="year-val">6</span> 年 (受保人歲數：<span id="age-val">6</span> 歲)
+            </div>
+            <input type="range" id="year-slider" min="6" max="100" value="6" oninput="updateData()">
+
+            <div class="grid" style="margin-top: 20px;">
+                <div class="card"><div class="label">該年提取金額 (HKD)</div><div class="value-hkd" id="ann-hkd">HKD 127,563</div><div class="value-usd" id="ann-usd">(USD 16,250)</div></div>
+                <div class="card"><div class="label">累積提取總額 (HKD)</div><div class="value-hkd" id="cum-hkd">HKD 127,563</div><div class="value-usd" id="ann-usd-cum">(USD 16,250)</div></div>
+                <div class="card" style="grid-column: span 2; background: #fff; border: 2px solid #002F6C;">
+                    <div class="label">提取後剩餘現金價值 (資產傳承) </div>
+                    <div class="withdraw-hkd" id="sv-hkd">HKD 1,351,778</div>
+                    <div class="value-usd" id="sv-usd" style="font-size: 18px; font-weight: bold; color:#666;">(USD 172,201)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-note">
+        註：所有數據均提取自官方建議書 港幣換算率 1:7.85。
+    </div>
+</div>
+
+<script>
+    let currentOption = 1;
+    const rate = 7.85;
+
+    // 方案一：完整數據 (第 6-100 年)
+    const data1 = {
+        6: 172201, 7: 185166, 8: 214427, 9: 217503, 10: 225884, 11: 223929, 12: 231112, 13: 236515, 14: 241995, 15: 248308,
+        16: 249542, 17: 254082, 18: 261845, 19: 268394, 20: 280304, 21: 293483, 22: 299095, 23: 313299, 24: 324380, 25: 336952,
+        26: 349340, 27: 363185, 28: 375465, 29: 385511, 30: 396227, 31: 407513, 32: 419696, 33: 432684, 34: 446527, 35: 461288,
+        36: 477016, 37: 493777, 38: 511646, 39: 530686, 40: 550979, 41: 572601, 42: 595647, 43: 620210, 44: 646383, 45: 674277,
+        46: 704003, 47: 735681, 48: 769439, 49: 805413, 50: 843749, 51: 884597, 52: 928136, 53: 974524, 54: 1023958, 55: 1076638,
+        56: 1132771, 57: 1192588, 58: 1256324, 59: 1324240, 60: 1396601, 61: 1473708, 62: 1555865, 63: 1643400, 64: 1736668, 65: 1836042,
+        66: 1941920, 67: 2054725, 68: 2174908, 69: 2302952, 70: 2439370, 71: 2584707, 72: 2739543, 73: 2904494, 74: 3080223, 75: 3267429,
+        76: 3466866, 77: 3679322, 78: 3905650, 79: 4146748, 80: 4403585, 81: 4677181, 82: 4968626, 83: 5279085, 84: 5609790, 85: 5962067,
+        86: 6337311, 87: 6737018, 88: 7162781, 89: 7616294, 90: 8099366, 91: 8613919, 92: 9161997, 93: 9745782, 94: 10367601, 95: 11029923,
+        96: 11735379, 97: 12486784, 98: 13287117, 99: 14139564, 100: 15047513
+    };
+
+    // 方案二：根據 5萬67.pdf 全年度映射 (第 6-100 年)
+    const data2 = {
+        6: 170951, 7: 182454, 8: 209799, 9: 211207, 10: 217625, 11: 213898, 12: 218781, 13: 221778, 14: 224654, 15: 228100,
+        16: 226662, 17: 228046, 18: 232098, 19: 234807, 20: 241943, 21: 249845, 22: 250956, 23: 259008, 24: 264103, 25: 270070,
+        26: 275523, 27: 281759, 28: 286392, 29: 288950, 30: 291662, 31: 294431, 32: 297475, 33: 300698, 34: 304111, 35: 307731,
+        36: 311564, 37: 315626, 38: 319935, 39: 324502, 40: 329347, 41: 334485, 42: 339940, 43: 345732, 44: 351881, 45: 358412,
+        46: 365350, 47: 372724, 48: 380559, 49: 388889, 50: 397745, 51: 407162, 52: 417181, 53: 427836, 54: 439172, 55: 451236,
+        56: 464073, 57: 477737, 58: 492278, 59: 507758, 60: 524234, 61: 541777, 62: 560454, 63: 580339, 64: 601514, 65: 624062,
+        66: 648083, 67: 673703, 68: 701048, 69: 730248, 70: 761448, 71: 794801, 72: 830472, 73: 868641, 74: 909501, 75: 953265,
+        76: 1000171, 77: 1050478, 78: 1104449, 79: 1152438, 80: 1204796, 81: 1269550, 82: 1339108, 83: 1413813, 84: 1494025, 85: 1556756,
+        86: 1656094, 87: 1762744, 88: 1877237, 89: 2000139, 90: 2026857, 91: 2167497, 92: 2318536, 93: 2410874, 94: 2551217, 95: 2700697,
+        96: 2859908, 97: 3029486, 98: 3210101, 99: 3402474, 100: 3607369
+    };
+
+    // 方案三：根據 5萬1110.pdf 全年度映射 (第 11-100 年)
+    const data3 = {
+        11: 313297, 12: 320110, 13: 325100, 14: 329969, 15: 335734, 16: 334375, 17: 337233, 18: 344105, 19: 349065, 20: 360689,
+        21: 373559, 22: 376386, 23: 389708, 24: 398705, 25: 409132, 26: 418904, 27: 429991, 28: 438769, 29: 444500, 30: 450592,
+        31: 456906, 32: 463785, 33: 471094, 34: 478859, 35: 487115, 36: 495883, 37: 505200, 38: 515108, 39: 525637, 40: 536833,
+        41: 548732, 42: 561390, 43: 574856, 44: 589177, 45: 604414, 46: 620626, 47: 637879, 48: 656238, 49: 675779, 50: 696579,
+        51: 718718, 52: 742295, 53: 767391, 54: 794109, 55: 822557, 56: 852857, 57: 885139, 58: 919541, 59: 956214, 60: 995091,
+        61: 1037083, 62: 1081912, 63: 1129759, 64: 1180816, 65: 1235284, 66: 1293393, 67: 1355382, 68: 1421503, 69: 1492031, 70: 1555711,
+        71: 1630138, 72: 1711283, 73: 1799630, 74: 1895697, 75: 2000030, 76: 2101032, 77: 2221349, 78: 2342803, 79: 2472173, 80: 2609980,
+        81: 2756769, 82: 2913128, 83: 3079678, 84: 3257083, 85: 3446052, 86: 3647414, 87: 3862085, 88: 4091090, 89: 4335552, 90: 4596700,
+        91: 4875880, 92: 5174548, 93: 5475444, 94: 5808929, 95: 6164130, 96: 6542459, 97: 6945426, 98: 7374628, 99: 7831773, 100: 8318678
+    };
+
+    function switchOption(opt) {
+        currentOption = opt;
+        ['tab1', 'tab2', 'tab3'].forEach((id, i) => document.getElementById(id).className = (i+1 === opt) ? 'tab active' : 'tab');
+        const slider = document.getElementById('year-slider');
+        const startY = (opt === 3) ? 11 : 6;
+        slider.min = startY; slider.value = (parseInt(slider.value) < startY) ? startY : slider.value;
+        const annUSD = (opt === 1) ? 16250 : (opt === 2 ? 17500 : 25000);
+        document.getElementById('option-desc').innerText = `策略：每年提取 USD ${annUSD.toLocaleString()} (${opt===1?'6.5%':(opt===2?'7.0%':'10.0%')})`;
+        updateData();
+    }
+
+    function updateData() {
+        const year = parseInt(document.getElementById('year-slider').value);
+        const dataSet = currentOption === 1 ? data1 : (currentOption === 2 ? data2 : data3);
+        const annUSD = currentOption === 1 ? 16250 : (currentOption === 2 ? 17500 : 25000);
+        const startY = currentOption === 3 ? 11 : 6;
+
+        let svUSD = dataSet[year] || 0;
+
+        document.getElementById('year-val').innerText = year;
+        document.getElementById('age-val').innerText = year;
+        document.getElementById('ann-hkd').innerText = `HKD ${(annUSD * rate).toLocaleString(undefined, {maximumFractionDigits:0})}`;
+        document.getElementById('ann-usd').innerText = `(USD ${annUSD.toLocaleString()})`;
+        const totalCumUSD = (year - startY + 1) * annUSD;
+        document.getElementById('cum-hkd').innerText = `HKD ${(totalCumUSD * rate).toLocaleString(undefined, {maximumFractionDigits:0})}`;
+        document.getElementById('ann-usd-cum').innerText = `(USD ${totalCumUSD.toLocaleString()})`;
+        document.getElementById('sv-hkd').innerText = `HKD ${(svUSD * rate).toLocaleString(undefined, {maximumFractionDigits:0})}`;
+        document.getElementById('sv-usd').innerText = `(USD ${svUSD.toLocaleString()})`;
+    }
+    switchOption(1);
+</script>
+</body>
+</html>
