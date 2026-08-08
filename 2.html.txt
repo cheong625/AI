@@ -1,0 +1,247 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>保誠「信守明天」多元貨幣計劃建議書摘要</title>
+    <style>
+        body { font-family: 'Microsoft JhengHei', sans-serif; background-color: #f4f7f9; color: #333; line-height: 1.6; padding: 20px; max-width: 1100px; margin: auto; }
+        .container { background-color: white; padding: 40px; border-radius: 15px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+        h1, h2 { color: #004a99; border-bottom: 2px solid #e20015; padding-bottom: 10px; margin-top: 30px; }
+        .highlight-red { color: #e20015; font-weight: bold; }
+        .highlight-blue { color: #004a99; font-weight: bold; }
+
+        .plan-summary { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .card-basic { border: 1px solid #ddd; padding: 20px; border-radius: 10px; background: #fff; }
+
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; background: white; }
+        th, td { border: 1px solid #eee; padding: 12px; text-align: center; }
+        th { background-color: #004a99; color: white; }
+        .hkd-val { color: #e20015; font-weight: bold; }
+
+        .interactive-container { background-color: #f0f7ff; padding: 30px; border-radius: 20px; border: 1px solid #004a99; margin: 40px 0; }
+        .option-header { background-color: #e20015; color: white; padding: 15px; border-radius: 10px; text-align: center; font-size: 1.2em; font-weight: bold; margin-bottom: 20px; display: inline-block; width: 100%; }
+        .strategy-text { text-align: center; color: #004a99; font-weight: bold; margin-bottom: 20px; }
+        .year-label { text-align: center; font-size: 1.5em; margin: 10px 0; font-weight: bold; }
+
+        input[type=range] { width: 100%; height: 12px; cursor: pointer; margin: 20px 0; }
+
+        .data-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+        .data-card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; }
+        .data-card .label { color: #666; font-size: 0.9em; margin-bottom: 10px; }
+        .data-card .val { font-size: 1.4em; font-weight: bold; color: #004a99; }
+
+        .full-width-card { grid-column: span 2; background: white; padding: 25px; border-radius: 12px; border: 2px solid #004a99; text-align: center; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>保誠「信守明天」多元貨幣計劃建議書</h1>
+
+    <div class="plan-summary">
+        <div class="card-basic">
+            <p><strong>計劃名稱：</strong> <span class="highlight-blue">保誠信守明天多元貨幣計劃</span></p>
+            <p><strong>保費供款年期：</strong> <span class="highlight-blue">5 年</span></p>
+            <p><strong>受保人歲數：</strong> 62 歲 (翌年歲)</p>
+        </div>
+        <div class="card-basic">
+            <p><strong>每年供款：</strong> USD 20,000 / <span class="highlight-red">HKD 156,000</span> (匯率 1:7.8)</p>
+            <p><strong>5年總保費：</strong> USD 100,000 / <span class="highlight-red">HKD 780,000</span></p>
+        </div>
+    </div>
+
+    <h2>一、一筆過預繳優惠 (匯率 1:7.85)</h2>
+    <table>
+        <tr>
+            <th>項目</th>
+            <th>美元 (USD)</th>
+            <th>港幣 (HKD 1:7.85)</th>
+        </tr>
+        <tr>
+            <td>一筆過預繳總額 (含徵費)</td>
+            <td>$93,005.05</td>
+            <td class="hkd-val">$730,089.64</td>
+        </tr>
+        <tr>
+            <td>少交保費金額 (節省約 35% 首年保費)</td>
+            <td class="highlight-blue">$7,058.60</td>
+            <td class="hkd-val">$55,409.99</td>
+        </tr>
+    </table>
+
+    <h2>二、財富增長里程碑 (不提取情況 - 退保價值總額)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>保單年度</th>
+                <th>翌年歲</th>
+                <th>港幣總價值 (HKD 1:7.8)</th>
+                <th>美元總價值 (USD)</th>
+                <th>保費倍數</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>第 10 年</td><td>71 歲</td><td class="hkd-val">$997,144</td><td>$127,839</td><td>1.28 倍</td></tr>
+            <tr><td>第 15 年</td><td>76 歲</td><td class="hkd-val">$1,473,693</td><td>$188,935</td><td>1.89 倍</td></tr>
+            <tr><td>第 20 年</td><td>81 歲</td><td class="hkd-val">$2,161,645</td><td>$277,134</td><td>2.77 倍</td></tr>
+            <tr><td>第 25 年</td><td>86 歲</td><td class="hkd-val">$3,225,050</td><td>$413,468</td><td>4.13 倍</td></tr>
+            <tr><td>第 30 年</td><td>91 歲</td><td class="hkd-val">$4,565,200</td><td>$585,282</td><td>5.85 倍</td></tr>
+            <tr><td>第 35 年</td><td>96 歲</td><td class="hkd-val">$5,871,622</td><td>$752,772</td><td>7.53 倍</td></tr>
+            <tr><td>第 39 年</td><td>100 歲</td><td class="hkd-val">$8,045,606</td><td>$1,031,488</td><td>10.3 倍</td></tr>
+        </tbody>
+    </table>
+
+    <h2>三、互動展示：提取與保單價值對比</h2>
+
+    <!-- 方案一 6% -->
+    <div class="interactive-container">
+        <div class="option-header">方案一 (每年提取總保費之 6%)</div>
+        <div class="strategy-text">策略：從 第 6 年起，每年提取 USD 6,000 / HKD 46,800</div>
+        <div class="year-label">保單年度：第 <span id="y1_t">10</span> 年 (約 <span id="a1_t">71</span> 歲)</div>
+        <input type="range" id="s1" min="6" max="39" value="10" oninput="updateP1(this.value)">
+
+        <div class="data-grid">
+            <div class="data-card">
+                <div class="label">該年提取金額 (6%)</div>
+                <div class="val">HKD 46,800</div>
+                <div style="font-size:0.8em; color:#888;">(USD 6,000)</div>
+            </div>
+            <div class="data-card">
+                <div class="label">累積提取總額 (層層遞加)</div>
+                <div class="val highlight-red" id="p1_cum">HKD 234,000</div>
+                <div style="font-size:0.8em; color:#888;">(USD <span id="p1_cum_u">30,000</span>)</div>
+            </div>
+            <div class="full-width-card">
+                <div class="label">提取後剩餘總現金價值</div>
+                <div class="val" id="p1_sv" style="font-size:1.8em;">HKD 730,275</div>
+                <div style="font-size:0.9em; color:#888;">(USD <span id="p1_sv_u">93,625</span>)</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 方案二 7% -->
+    <div class="interactive-container">
+        <div class="option-header" style="background-color:#004a99;">方案二 (每年提取總保費之 7%)</div>
+        <div class="strategy-text">策略：從 第 7 年起，每年提取 USD 7,000 / HKD 54,600</div>
+        <div class="year-label">保單年度：第 <span id="y2_t">10</span> 年 (約 <span id="a2_t">71</span> 歲)</div>
+        <input type="range" id="s2" min="7" max="39" value="10" oninput="updateP2(this.value)">
+
+        <div class="data-grid">
+            <div class="data-card">
+                <div class="label">該年提取金額 (7%)</div>
+                <div class="val">HKD 54,600</div>
+                <div style="font-size:0.8em; color:#888;">(USD 7,000)</div>
+            </div>
+            <div class="data-card">
+                <div class="label">累積提取總額 (層層遞加)</div>
+                <div class="val highlight-red" id="p2_cum">HKD 218,400</div>
+                <div style="font-size:0.8em; color:#888;">(USD <span id="p2_cum_u">28,000</span>)</div>
+            </div>
+            <div class="full-width-card">
+                <div class="label">提取後剩餘總現金價值</div>
+                <div class="val" id="p2_sv" style="font-size:1.8em;">HKD 762,754</div>
+                <div style="font-size:0.9em; color:#888;">(USD <span id="p2_sv_u">97,789</span>)</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 方案三 10% -->
+    <div class="interactive-container">
+        <div class="option-header">方案三 (每年提取總保費之 10%)</div>
+        <div class="strategy-text">策略：從 第 10 年起，每年提取 USD 10,000 / HKD 78,000</div>
+        <div class="year-label">保單年度：第 <span id="y3_t">10</span> 年 (約 <span id="a3_t">71</span> 歲)</div>
+        <input type="range" id="s3" min="10" max="39" value="10" oninput="updateP3(this.value)">
+
+        <div class="data-grid">
+            <div class="data-card">
+                <div class="label">該年提取金額 (10%)</div>
+                <div class="val">HKD 78,000</div>
+                <div style="font-size:0.8em; color:#888;">(USD 10,000)</div>
+            </div>
+            <div class="data-card">
+                <div class="label">累積提取總額 (層層遞加)</div>
+                <div class="val highlight-red" id="p3_cum">HKD 78,000</div>
+                <div style="font-size:0.8em; color:#888;">(USD <span id="p3_cum_u">10,000</span>)</div>
+            </div>
+            <div class="full-width-card">
+                <div class="label">提取後剩餘總現金價值</div>
+                <div class="val" id="p3_sv" style="font-size:1.8em;">HKD 919,144</div>
+                <div style="font-size:0.9em; color:#888;">(USD <span id="p3_sv_u">117,839</span>)</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const rate = 7.8;
+    // 方案一：提取後剩餘現金價值 (美元) - 完整列表
+    const p1_val = {
+        6: 69380, 7: 75130, 8: 87596, 9: 89491, 10: 93625, 11: 93550, 12: 97340, 13: 100459, 14: 103689,
+        15: 107357, 16: 108916, 17: 111990, 18: 116575, 19: 120724, 20: 127391, 21: 134766, 22: 138805,
+        23: 146938, 24: 153756, 25: 161418, 26: 169137, 27: 177708, 28: 185668, 29: 192671, 30: 200149,
+        31: 208058, 32: 216575, 33: 225662, 34: 235357, 35: 245702, 36: 256735, 37: 268502, 38: 281055, 39: 294440
+    };
+    // 方案二：提取後剩餘現金價值 (美元) - 完整列表
+    const p2_val = {
+        7: 80220, 8: 92769, 9: 94130, 10: 97789, 11: 96978, 12: 100126, 13: 102507, 14: 104925,
+        15: 107708, 16: 108292, 17: 110315, 18: 113740, 19: 116643, 20: 121882, 21: 127678, 22: 130189,
+        23: 136445, 24: 141348, 25: 146907, 26: 152393, 27: 158521, 28: 163974, 29: 168458, 30: 173242,
+        31: 178281, 32: 183720, 33: 189519, 34: 195700, 35: 202291, 36: 209315, 37: 216800, 38: 224781, 39: 233284
+    };
+    // 方案三：提取後剩餘現金價值 (美元) - 完整列表
+    const p3_val = {
+        10: 117839, 11: 115168, 12: 117220, 13: 118203, 14: 119063, 15: 120164, 16: 118625, 17: 118508,
+        18: 119708, 19: 120131, 20: 122735, 21: 125621, 22: 124979, 23: 127704, 24: 128845, 25: 130293,
+        26: 131367, 27: 132684, 28: 133107, 29: 132429, 30: 131693, 31: 130845, 32: 129974, 33: 129029,
+        34: 128003, 35: 126892, 36: 125689, 37: 124387, 38: 122982, 39: 121464
+    };
+
+    function updateP1(val) {
+        let year = parseInt(val);
+        document.getElementById('y1_t').innerText = year;
+        document.getElementById('a1_t').innerText = 62 + year - 1;
+        let cumUSD = (year - 6 + 1) * 6000;
+        document.getElementById('p1_cum').innerText = 'HKD ' + (cumUSD * rate).toLocaleString();
+        document.getElementById('p1_cum_u').innerText = cumUSD.toLocaleString();
+        let svUSD = p1_val[year];
+        document.getElementById('p1_sv').innerText = 'HKD ' + Math.round(svUSD * rate).toLocaleString();
+        document.getElementById('p1_sv_u').innerText = svUSD.toLocaleString();
+    }
+
+    function updateP2(val) {
+        let year = parseInt(val);
+        document.getElementById('y2_t').innerText = year;
+        document.getElementById('a2_t').innerText = 62 + year - 1;
+        let cumUSD = (year - 7 + 1) * 7000;
+        document.getElementById('p2_cum').innerText = 'HKD ' + (cumUSD * rate).toLocaleString();
+        document.getElementById('p2_cum_u').innerText = cumUSD.toLocaleString();
+        let svUSD = p2_val[year];
+        document.getElementById('p2_sv').innerText = 'HKD ' + Math.round(svUSD * rate).toLocaleString();
+        document.getElementById('p2_sv_u').innerText = svUSD.toLocaleString();
+    }
+
+    function updateP3(val) {
+        let year = parseInt(val);
+        document.getElementById('y3_t').innerText = year;
+        document.getElementById('a3_t').innerText = 62 + year - 1;
+        let cumUSD = (year - 10 + 1) * 10000;
+        document.getElementById('p3_cum').innerText = 'HKD ' + (cumUSD * rate).toLocaleString();
+        document.getElementById('p3_cum_u').innerText = cumUSD.toLocaleString();
+        let svUSD = p3_val[year];
+        document.getElementById('p3_sv').innerText = 'HKD ' + Math.round(svUSD * rate).toLocaleString();
+        document.getElementById('p3_sv_u').innerText = svUSD.toLocaleString();
+    }
+
+    // 初始化滑塊位置
+    updateP1(10); updateP2(10); updateP3(10);
+</script>
+</body>
+</html>
